@@ -1,0 +1,34 @@
+[versions]
+compileSdk = "31"
+minSdk = "21"
+targetSdk = "31"
+navigation = "2.3.5"
+lifecycle = "2.3.1"
+retrofit = "2.9.0"
+
+[libraries]
+gradle-plugin-android = { module = "com.android.tools.build:gradle", version = "7.0.3" }
+gradle-plugin-kotlin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version = "1.5.31" }
+gradle-plugin-navigation = { module = "androidx.navigation:navigation-safe-args-gradle-plugin", version.ref = "navigation" }
+
+core-ktx = { module = "androidx.core:core-ktx", version = "1.6.0" }
+appcompat = { module = "androidx.appcompat:appcompat", version = "1.3.1" }
+fragment = { module = "androidx.fragment:fragment-ktx", version = "1.3.6" }
+lifecycle-viewmodel = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "lifecycle" }
+lifecycle-livedata = { module = "androidx.lifecycle:lifecycle-livedata-ktx", version.ref = "lifecycle" }
+material = { module = "com.google.android.material:material", version = "1.4.0" }
+constraintlayout = { module = "androidx.constraintlayout:constraintlayout", version = "2.1.1" }
+recyclerview = { module = "androidx.recyclerview:recyclerview", version = "1.2.1" }
+navigation-fragment = { module = "androidx.navigation:navigation-fragment-ktx", version.ref = "navigation" }
+navigation-ui = { module = "androidx.navigation:navigation-ui-ktx", version.ref = "navigation" }
+navigation-dynamic-features = { module = "androidx.navigation:navigation-dynamic-features-fragment", version.ref = "navigation" }
+coil = { module = "io.coil-kt:coil", version = "1.4.0" }
+koin = { module = "io.insert-koin:koin-android", version = "3.1.2" }
+retrofit-core = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
+retrofit-converter = { module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofit" }
+coroutines = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version = "1.3.9" }
+
+[bundles]
+navigation = ["navigation-fragment", "navigation-ui", "navigation-dynamic-features"]
+lifecycle = ["lifecycle-viewmodel", "lifecycle-livedata"]
+retrofit = ["retrofit-core", "retrofit-converter", "navigation-dynamic-features"]

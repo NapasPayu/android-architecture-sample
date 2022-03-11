@@ -1,0 +1,4 @@
+<resources>
+    <string name="title_order_success">Order success</string>
+    <string name="order_success_message">Order successful!</string>
+</resources>

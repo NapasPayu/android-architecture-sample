@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:startDestination="@id/store_fragment">
+
+    <fragment
+        android:id="@+id/store_fragment"
+        android:name="ooo.opn.challengemobilesample.store.StoreFragment"
+        android:label="@string/title_store">
+
+        <action
+            android:id="@+id/store_to_ordersuccess"
+            app:destination="@id/order_success_fragment" />
+    </fragment>
+
+    <include-dynamic
+        android:id="@+id/order_success_fragment"
+        app:graphPackage="ooo.opn.challengemobilesample.ordersuccess"
+        app:graphResName="order_success_navigation"
+        app:moduleName="ordersuccess" />
+</navigation>

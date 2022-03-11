@@ -1,0 +1,5 @@
+<resources>
+    <string name="title_store">Store</string>
+    <string name="opening_hours">Opening hours %1$s</string>
+    <string name="next">Next</string>
+</resources>

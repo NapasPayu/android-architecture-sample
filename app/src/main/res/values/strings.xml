@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ChallengeMobileSample</string>
+    <string name="title_store">Store</string>
+    <string name="generic_error">Something went wrong.</string>
+    <string name="title_dynamicfeature">Order success</string>
+    <string name="title_ordersuccess">Order success</string>
+</resources>
