@@ -12,11 +12,7 @@
         "*"
       ],
       "groupName": "all dependencies",
-      "groupSlug": "all",
-      "matchPaths": [
-        "gradle/libs.versions.toml",
-        "build.gradle.kts"
-      ]
+      "groupSlug": "all"
     }
   ],
   "lockFileMaintenance": {
